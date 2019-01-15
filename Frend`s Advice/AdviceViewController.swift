@@ -52,6 +52,7 @@ class AdviceViewController: UIViewController {
     @IBAction func refreshAction(_ sender: UIButton) {
         
         buttonView.rotate()
+        
         perform(#selector(takeMeDataAdvice), with: nil, afterDelay: 0.2)
     }
 }

@@ -18,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC60653121BE412300F12663 /* Frend`s Advice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Frend`s Advice.app"; path = "/Users/artem/Desktop/Frend`s Advice/build/Debug-iphoneos/Frend`s Advice.app"; sourceTree = "<absolute>"; };
 		AC60653421BE412300F12663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC60653921BE412300F12663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC60653B21BE412400F12663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		AC60654821BE435900F12663 /* AdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
 		AC8F68F621C025D80058E216 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		AC971E2F21C0105A007B0C6A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		ACA5A09F21EE5D8600899CCF /* Frend`s Advice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frend`s Advice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				AC60653321BE412300F12663 /* Frend`s Advice */,
+				ACA5A09F21EE5D8600899CCF /* Frend`s Advice.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +82,7 @@
 			);
 			name = "Frend`s Advice";
 			productName = "Frend`s Advice";
-			productReference = AC60653121BE412300F12663 /* Frend`s Advice.app */;
+			productReference = ACA5A09F21EE5D8600899CCF /* Frend`s Advice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.gukov.Frend-s-Advice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.gukov.Frend-s-Advice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

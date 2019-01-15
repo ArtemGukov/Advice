@@ -15,6 +15,7 @@
 		AC60654921BE435900F12663 /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60654821BE435900F12663 /* AdviceViewController.swift */; };
 		AC8F68F721C025D80058E216 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F68F621C025D80058E216 /* FavoriteTableViewController.swift */; };
 		AC971E3021C0105A007B0C6A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC971E2F21C0105A007B0C6A /* UIButtonExtension.swift */; };
+		ACA5A0A321EE60FF00899CCF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ACA5A0A221EE60FF00899CCF /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AC8F68F621C025D80058E216 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		AC971E2F21C0105A007B0C6A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		ACA5A09F21EE5D8600899CCF /* Frend`s Advice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frend`s Advice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA5A0A221EE60FF00899CCF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		AC60652821BE412300F12663 = {
 			isa = PBXGroup;
 			children = (
+				ACA5A0A221EE60FF00899CCF /* .gitignore */,
 				AC60653321BE412300F12663 /* Frend`s Advice */,
 				ACA5A09F21EE5D8600899CCF /* Frend`s Advice.app */,
 			);
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA5A0A321EE60FF00899CCF /* .gitignore in Resources */,
 				AC60653F21BE412400F12663 /* LaunchScreen.storyboard in Resources */,
 				AC60653C21BE412400F12663 /* Assets.xcassets in Resources */,
 				AC60653A21BE412300F12663 /* Main.storyboard in Resources */,

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import UserNotifications
+
 
 let url = "http://fucking-great-advice.ru/api/random/"
 
@@ -14,6 +16,7 @@ class AdviceViewController: UIViewController {
 
     @IBOutlet weak var viewView: UIView!
     @IBOutlet weak var labelTextAdvice: UILabel!
+    @IBOutlet weak var labelIdAdvice: UILabel!
     @IBOutlet weak var buttonView: UIButton!
     
     private var advices = [Advice]()
@@ -30,6 +33,7 @@ class AdviceViewController: UIViewController {
                 
                 DispatchQueue.main.async {
                     self.labelTextAdvice.text = "\(advice.text)"
+                    self.labelIdAdvice.text = "\(advice.id)"
                     self.labelTextAdvice.isHidden = false
                 }
                 
@@ -43,16 +47,37 @@ class AdviceViewController: UIViewController {
         super.viewDidLoad()
 
         labelTextAdvice.isHidden = true
+        labelIdAdvice.isHidden = true
         view.layer.cornerRadius = 10
         viewView.layer.cornerRadius = 10
         buttonView.layer.cornerRadius = buttonView.bounds.width / 2
         takeMeDataAdvice()
     }
-    
+
     @IBAction func refreshAction(_ sender: UIButton) {
         
         buttonView.rotate()
         
         perform(#selector(takeMeDataAdvice), with: nil, afterDelay: 0.2)
+        
+        /*
+        let message = labelTextAdvice.text!
+        print(message)
+        let content = UNMutableNotificationContent()
+        content.body = message
+        content.sound = UNNotificationSound.default
+        
+        let today = Date()
+        var dateComponents = Calendar.current.dateComponents([.hour], from: today)
+        dateComponents.hour = 22
+        dateComponents.minute = 40
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        if let identifier = labelIdAdvice.text {
+            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+            let center = UNUserNotificationCenter.current()
+            center.add(request, withCompletionHandler: nil)
+        }
+ */
     }
 }

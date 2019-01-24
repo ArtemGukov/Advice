@@ -13,7 +13,7 @@
         <!--Advice View Controller-->
         <scene sceneID="KdX-fX-mma">
             <objects>
-                <viewController id="q0C-ZF-hyA" customClass="AdviceViewController" customModule="Frend_s_Advice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q0C-ZF-hyA" customClass="AdviceViewController" customModule="Advice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zlZ-JA-v8o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu3-ah-9wP" userLabel="textAdvice">
                                         <rect key="frame" x="8" y="8" width="312" height="302"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyp-al-jHv" userLabel="idAdvice">
+                                        <rect key="frame" x="143" y="269" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -76,6 +83,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonView" destination="3rb-FY-ayx" id="JzV-L2-kFh"/>
+                        <outlet property="labelIdAdvice" destination="Nyp-al-jHv" id="6Qp-Hp-Jkt"/>
                         <outlet property="labelTextAdvice" destination="Nu3-ah-9wP" id="9zf-hG-CbA"/>
                         <outlet property="viewView" destination="POv-4H-PaC" id="MRI-Tp-eKI"/>
                     </connections>
@@ -87,7 +95,7 @@
         <!--Favorite Table View Controller-->
         <scene sceneID="gIy-1t-8bS">
             <objects>
-                <tableViewController id="sUq-Pl-Qw9" customClass="FavoriteTableViewController" customModule="Frend_s_Advice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="sUq-Pl-Qw9" customClass="FavoriteTableViewController" customModule="Advice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t4S-jQ-rdK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
